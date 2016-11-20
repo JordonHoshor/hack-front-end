@@ -1,1 +1,14 @@
-/* add custom styles */
+body {
+  background-image: url("../../assets/interior.jpg");
+  background-size: cover; }
+
+table {
+  background-color: white; }
+
+.active {
+  box-shadow: 10px 5px 5px #183CFF; }
+
+.bench {
+  box-shadow: 10px 5px 5px #E8700C; }
+
+/*# sourceMappingURL=main.css.map */
