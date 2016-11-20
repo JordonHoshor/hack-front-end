@@ -16,7 +16,7 @@
       });
 
     $urlRouterProvider
-      .otherwise('/home');
+      .otherwise('/main');
   }
 
 })();
