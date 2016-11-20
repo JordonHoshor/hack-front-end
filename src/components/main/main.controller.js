@@ -10,7 +10,10 @@
 
   function mainController(mainService) {
     /*jshint validthis: true */
-    this.greeting = 'Hello World!';
+    this.greeting = 'The Alexa Hustle';
+    mainService.getPlayers().then((data) => {
+      console.log(data);
+    });
   }
 
 })();
