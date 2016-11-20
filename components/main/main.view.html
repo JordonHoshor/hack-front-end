@@ -3,6 +3,9 @@
   <div class="container">
     <table class="table table-bordered table-striped">
       <tr>
+        <th>Starters</th>
+      </tr>
+      <tr>
         <th>Slot</th>
         <th>Player</th>
         <th>Position</th>
@@ -15,6 +18,81 @@
         <td>{{mainCtrl.players.QB.position}}</td>
         <td>{{mainCtrl.players.QB.nfl_team}}</td>
         <td>{{mainCtrl.players.QB.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.RB1.team_slot}}</td>
+        <td>{{mainCtrl.players.RB1.name}}</td>
+        <td>{{mainCtrl.players.RB1.position}}</td>
+        <td>{{mainCtrl.players.RB1.nfl_team}}</td>
+        <td>{{mainCtrl.players.RB1.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.RB2.team_slot}}</td>
+        <td>{{mainCtrl.players.RB2.name}}</td>
+        <td>{{mainCtrl.players.RB2.position}}</td>
+        <td>{{mainCtrl.players.RB2.nfl_team}}</td>
+        <td>{{mainCtrl.players.RB2.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.WR1.team_slot}}</td>
+        <td>{{mainCtrl.players.WR1.name}}</td>
+        <td>{{mainCtrl.players.WR1.position}}</td>
+        <td>{{mainCtrl.players.WR1.nfl_team}}</td>
+        <td>{{mainCtrl.players.WR1.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.WR2.team_slot}}</td>
+        <td>{{mainCtrl.players.WR2.name}}</td>
+        <td>{{mainCtrl.players.WR2.position}}</td>
+        <td>{{mainCtrl.players.WR2.nfl_team}}</td>
+        <td>{{mainCtrl.players.WR2.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.TE.team_slot}}</td>
+        <td>{{mainCtrl.players.TE.name}}</td>
+        <td>{{mainCtrl.players.TE.position}}</td>
+        <td>{{mainCtrl.players.TE.nfl_team}}</td>
+        <td>{{mainCtrl.players.TE.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.FLEX.team_slot}}</td>
+        <td>{{mainCtrl.players.FLEX.name}}</td>
+        <td>{{mainCtrl.players.FLEX.position}}</td>
+        <td>{{mainCtrl.players.FLEX.nfl_team}}</td>
+        <td>{{mainCtrl.players.FLEX.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.DEF.team_slot}}</td>
+        <td>{{mainCtrl.players.DEF.name}}</td>
+        <td>{{mainCtrl.players.DEF.position}}</td>
+        <td>{{mainCtrl.players.DEF.nfl_team}}</td>
+        <td>{{mainCtrl.players.DEF.projected_points}}</td>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.K.team_slot}}</td>
+        <td>{{mainCtrl.players.K.name}}</td>
+        <td>{{mainCtrl.players.K.position}}</td>
+        <td>{{mainCtrl.players.K.nfl_team}}</td>
+        <td>{{mainCtrl.players.K.projected_points}}</td>
+      </tr>
+    </table><br>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th>Benched</th>
+      </tr>
+      <tr>
+        <th>Slot</th>
+        <th>Player</th>
+        <th>Position</th>
+        <th>Team</th>
+        <th>Projected Points</th>
+      </tr>
+      <tr ng-repeat="benched in mainCtrl.players.bench | orderBy:'-projected_points'">
+        <td>{{benched.team_slot}}</td>
+        <td>{{benched.name}}</td>
+        <td>{{benched.position}}</td>
+        <td>{{benched.nfl_team}}</td>
+        <td>{{benched.projected_points}}</td>
       </tr>
     </table>
   </div>
