@@ -15,7 +15,6 @@
     this.players.bench = [];
     mainService.getPlayers().then((data) => {
       const results = data.data.data;
-      console.log(results);
       results.map(player => {
         switch (player.team_slot) {
           case 'QB':
@@ -49,7 +48,7 @@
             this.players.bench.push(player);
             break;
         }
-      })
+      });
     });
   }
 
