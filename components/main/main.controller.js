@@ -10,7 +10,6 @@
 
   function mainController(mainService) {
     /*jshint validthis: true */
-    this.greeting = 'The Alexa Hustle';
     this.players = {};
     this.players.bench = [];
     mainService.getPlayers().then((data) => {
@@ -53,3 +52,13 @@
   }
 
 })();
+// $scope.myData = response.list;
+//
+// // Update ngTable to reflect the new data
+// if ($scope.tableParams) {
+//     $scope.tableParams.reload();
+// } else {
+//     // create your table as before,
+//     // but tying it to $scope.myData
+//     // instead of response.list
+// }
