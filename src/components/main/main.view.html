@@ -1,5 +1,21 @@
 <div class="container">
-  <div ng-controller="mainController as mainCtrl">
-    <p>{{mainCtrl.greeting}}</p>
+  <p>{{mainCtrl.greeting}}</p>
+  <div class="container">
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th>Slot</th>
+        <th>Player</th>
+        <th>Position</th>
+        <th>Team</th>
+        <th>Projected Points</th>
+      </tr>
+      <tr>
+        <td>{{mainCtrl.players.QB.team_slot}}</td>
+        <td>{{mainCtrl.players.QB.name}}</td>
+        <td>{{mainCtrl.players.QB.position}}</td>
+        <td>{{mainCtrl.players.QB.nfl_team}}</td>
+        <td>{{mainCtrl.players.QB.projected_points}}</td>
+      </tr>
+    </table>
   </div>
 </div>
